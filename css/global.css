@@ -1,0 +1,379 @@
+/* #region Início do Body */
+body{
+    margin: 0;
+    background-color: rgb(0, 26, 53);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.main{
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+    
+}
+/* #endregion Fim do body */
+
+/* #region Início da Navbar */
+nav{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+.div-nav-topic{
+    display: flex;
+    justify-content:center;
+}
+
+.topic-a{
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+    padding: 3%;
+}
+.topic-a:hover{
+    text-decoration: underline;
+    background-color: rgb(42, 42, 42);
+}
+/* #endregion Fim da Navbar */
+
+/* #region Inicio do Perfil */
+#perfil{
+    position: relative;
+    margin-top: 100px;
+    width: 35%;
+    left: 4%;
+}
+.div-img-perfil{
+    margin: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.img-perfil{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.div-info-perfil{
+    margin: 0px;
+}
+
+.info-perfil{
+    margin: 0;
+    text-align: center;
+}
+
+/* #endregion Fim do Perfil */
+
+/* #region Inicío de Bem Vindo, Apresentação e Atuação */
+
+/* Bemvindo */
+.welcome-class{
+    margin: 0;
+    width: 30%;
+    position: relative;
+    left: 65%;
+    top: 180px;
+    font-size: 50px;
+}
+
+/* Apresentação */
+.div-about-me{
+    position: relative;
+    width: 45%;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 300px;
+}
+
+#ap, #atu, #co{
+    font-size: 35px;
+    scroll-margin-top: 180px;
+    margin: 0;
+}
+
+#ap, .ap-desc{
+    padding: 13px;
+    margin: 0;
+}
+
+p{
+    font-size: 25px;
+}
+
+/* Atuação */
+
+.div-atuacao{
+    position: relative;
+    width: 80%;
+    justify-content: center;
+    background-color: rgb(0, 116, 183);
+    margin: 0;
+    padding: 5%;
+    left: 5%;
+    bottom: 100px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.atu-desc{
+    font-size: 45px;
+}
+
+/* #endregion Fim de Bem Vindo, Apresentação e Atuação */
+
+/* #region Inicio da Timeline - Vertical */
+#ex{
+    width: 30%;
+    position: relative;
+    left: 40%;
+    bottom: 80px;
+
+    font-size: 50px;
+    scroll-margin-top: 180px;
+    margin-top: 30px;
+}
+
+.timeline-vert {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.timeline-vert::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+}
+
+ .timeline-container-vert {
+    padding: 10px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-left-vert {
+    right: 2.1%;
+}
+
+.timeline-right-vert {
+    left: 51.5%;
+}
+
+
+.timeline-container-vert::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid rgb(0, 183, 255);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+.timeline-left-vert::before {
+    right: -37px;
+}
+
+.timeline-right-vert::before {
+    left: -45px;
+}
+
+.timeline-item-vert {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+
+/* #endregion Fim da Timeline - Vertical */
+
+/* #region Inicio da Timeline - Horizontal */
+#fo{
+    position: relative;
+    width: 30%;
+    margin-top: 80px;
+    left: 45%;
+    font-size: 55px;
+}
+
+.timeline-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    background-color: rgb(0, 116, 183);
+    border: 2px solid #2b2b2b;
+    border-radius: 8px;
+    padding: 20px;
+    width: 20%;
+    top: 30%;
+    margin: 0 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.timeline-item .title-timeline {
+    margin: 0;
+    font-weight: bolder;
+    color: #ebebeb;
+}
+
+.content-timeline {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+/* #endregion Fim da Timeline - Horizontal */
+
+/* #region Inicio da Galeria de Conhecimentos */
+.div-knowledge {
+    padding: 40px 5%;
+}
+
+#kno{
+    padding: 0px !important;
+    font-size: 40px;
+    scroll-margin-top: 180px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4f2ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.div-gallery-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-gallery-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.gallery-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+}
+
+/* #endregion Fim da Galeria de Conhecimentos */
+
+/* #region Inicio do Footer */
+footer{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.div-footer-contact{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#co{
+    margin-bottom: 10px;
+}
+
+.div-footer-contact ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.div-footer-contact li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+ 
+.img-icon-footer{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+} 
+
+.div-footer-contact h4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* #endregion Fim do Footer */
+
