@@ -1,2 +1,2 @@
-# portifolio-julia
-Um portifólio para me apresentar um pouco para as pessoas
+# Portifólio da julia
+### Um portifólio para que vocês conheçam um pouco do meu trabalho.
